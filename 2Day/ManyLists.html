@@ -6,11 +6,34 @@
     <title>ManyLists</title>
 </head>
 <body>
+    <form action="xxx.php" method="get">
     <!--列表的学习妈的傻逼-->
     <!--直接学习表单了她妈的-->
-    用户名：<input type="text"> <br/>
+    <label for="name">用户名：</label><input type="text" value="请输入你傻逼的名字" id="name"> <br/>
     密码：<input type="password"> <br/>
     图片：<input type="image" src="../PiCat.png"> <br/>
-    
+    <!--    name就相当于别的语言的变量，可以是所有radio选项可以单选一个了-->
+    性别：男<input type="radio" name="sex"> <input type="radio" name="sex">女 <input type="radio" checked>傻逼人<br/>
+    <!--单选框和复选框radio，checkbox都要和表单一样的名字-->
+    爱好：<input type="checkbox">打游戏 <input type="checkbox">看电影 <input type="checkbox">写代码<br/>
+    <!--checked就是默认选中-->
+    <!--maxlength输入字符的长度-->
+    <input type="submit" value="免费注册"><!--提交form-->
+    <input type="reset" value="重新填写"><!--重置form-->
+    <input type="button" value="点我试试"><!--目前无效，后期配合nodejs使用-->
+    <input type="file"><!--文件上传-->
+    智商<select name="选择button" id="select">
+        <option value="1">傻狗个</option>
+        <option value="2" selected>路边一条</option>
+        <option value="3">聪明猴</option>
+    </select>
+
+    <textarea cols="20" rows="9" placeholder="请输入你的自我介绍">
+        
+    </textarea>
+
+
+
+    <form/><!--form可以定义表单域-->
 </body>
 </html>
